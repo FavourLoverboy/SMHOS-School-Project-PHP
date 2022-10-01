@@ -1,0 +1,15 @@
+body{
+    background:red;
+    color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+}
+@page{
+    margin: 0;
+    size: A4;
+    color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+}
+#printBtn, #goBack{
+    display: none;
+    visibility: none;
+}

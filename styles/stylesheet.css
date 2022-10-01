@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* ============ Universal Styles ============ */
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.mainContainer{
+    /* background-color: #999; */
+    height: 100vh;
+    width: 100vw;
+}
+.leftNavSection{
+    background: #000d33;
+    height: 100vh;  
+}
+.leftNavSection ul li h1 img{
+    float: left;
+    width:51px;
+}
+.leftNavSection ul li h1 span{
+    color: #fff;
+    font-size: 30px;
+    line-height: 50px;
+    margin-left: 6px;
+}
+.leftNavSection ul{
+    padding: 5px 0 5px 30px;
+}
+.leftNavSection ul li{
+    font-weight: bold;
+    line-height: 35px;
+    list-style-type: none;
+    margin-right: 20px auto;
+    /* max-height: 35px; */
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+    transition: 1s;
+}
+.leftNavSection ul:first-child li{
+    max-height: 50px;
+}
+.leftNavSection ul li:hover{
+    background: #d1d1d173;
+}
+.leftNavSection ul:first-child li:hover{
+    background: #d1d1d173;
+}
+.leftNavSection ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+.leftNavSection ul li a i{
+    margin-left: 10px;
+    padding: 5px;
+    width:30px;
+}
+.leftNavSection ul li a i.fa-angle-right{
+    position: absolute;
+    right: 0;
+    top:5px;
+    transition: .5s;
+}
+.leftNavSection ul li > ul{
+    margin: 0 0 0 20px;
+    padding: 1px;
+}
+.leftNavSection ul li > ul li{
+    border-left: 1px solid #fff0f0;
+    color:#fff0f0;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: normal;
+    height: 25px;
+    line-height: 20px;
+    margin: 5px;
+    padding: 1px 1px 1px 20px;
+    text-transform: capitalize;
+}
+.leftNavSection ul li > ul li a,
+.leftNavSection ul li:target > ul li a{
+    background: transparent;
+}
+.leftNavSection ul li:target{
+    border-radius: 5px 0 0 5px;
+    max-height: 300px;
+}
+.leftNavSection ul li:target a{
+    background: #fff;
+    color: #444;
+    display: inherit;
+}
+.leftNavSection ul li:target a i.fa-angle-right{
+    transform: rotate(90deg);
+    top:10px;
+}
+.leftNavSection ul li:target:hover{
+    background: initial;
+}
+.dynamicBodyBox{
+    /* background: #1A3B61; */
+    min-height:572px;
+}
+.dynamicBodyBox .bodyBox{
+    /* background: rgba(192, 0, 192, 0.76); */
+    display: block;
+    height: 83vh;
+    margin: 15px auto;
+    width:98%;
+}
+.dynamicBodyBox .bodyBox .inner{
+    background: #fff;
+    height: inherit;
+    width: 100%;
+}
+.dynamicBodyBox .bodyBox .inner .top{
+    background: #0ff;
+    height: 23vh;
+    width: 100%;
+}
+.dynamicBodyBox .bodyBox .inner .top h1{
+    color:#fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 20vh;
+}
+.dynamicBodyBox .bodyBox .inner .bottom{
+    background: #0accee;
+    height: 60vh;
+    width: 100%;
+}
+.dynamicBodyBox .bodyBox .inner .bottom .left{
+    /* background: red; */
+    height: 60vh;    
+}
+.dynamicBodyBox .bodyBox .inner .bottom .left .box{
+    background: transparent;
+    /* border: 1px solid red; */
+    display: block;
+    height: 50vh;
+    margin: 34px auto;
+    margin-top: 0;
+    width:90%;
+    
+}
+.dynamicBodyBox .bodyBox .inner .bottom form span{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 23px;
+}
+.dynamicBodyBox .bodyBox .inner .bottom form input{
+    background: rgb(174, 255, 255);
+    border: none;
+    border-radius: 2px;
+    height: 50px;
+    padding: 5px;
+}
+.dynamicBodyBox .bodyBox .inner .bottom form input::placeholder{
+    color:#fff;
+    font-weight: bold;
+}
+.dynamicBodyBox .bodyBox .inner .bottom form select{
+    background: rgb(174, 255, 255);
+    border: none;
+    border-radius: 2px;
+    height: 50px;
+    padding: 5px;
+    width: 100%;
+}
+.dynamicBodyBox .bodyBox .inner .bottom form select::placeholder{
+    color:#fff;
+    font-weight: bold;
+}
+.dynamicBodyBox .bodyBox .inner .bottom .right{
+    /* background: green; */
+    height: 60vh;    
+}
+.dynamicBodyBox .bodyBox .inner .bottom .right .box{
+    background: rgba(0, 0, 255, 0.2);
+    border-radius: 50%;
+    clip-path: circle(50% at 50% 50%);
+    color: #fff0f0;
+    display: block;
+    font-size: 30px;
+    height: 40vh;
+    margin: 34px auto;
+    margin-bottom: 0;
+    padding: 80px 53px;
+    text-align: center;
+    width:90%;
+    
+}
+.dynamicBodyBox .bodyBox .inner .bottom .right .prev{
+    background: #0ff;
+    border: none;
+    border-radius: 3px;
+    color:#fff;
+    font-weight: bold;
+    height:40px;
+    margin: 0;
+    margin-left: 0px;
+    margin-top: 10px;
+    width: 100px;
+}
+.dynamicBodyBox .bodyBox .inner .bottom .right .next{
+    background: #0ff;
+    border: none;
+    border-radius: 3px;
+    color:#fff;
+    font-weight: bold;
+    height:40px;
+    margin: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 100px;
+}
+.dynamicBodyBox .bodyBox .inner .bottom .right .btn1{
+    background: #0ff;
+    color:#fff;
+    font-weight: bold;
+    height:40px;
+    margin-left: 370px;
+    margin-top: 10px;
+    width: 100px;
+}
+.dynamicBodyBox .bodyBox .inner .bottom .right .btn2{
+    background: #0ff;
+    color:#fff;
+    display:none;
+    font-weight: bold;
+    height:40px;
+    margin-left: 370px;
+    margin-top: -65px;
+    width: 100px;
+}
+.topNavSection{
+    background: #000d33;
+    height: 50px;
+    padding: 2px;
+}
+.topNavMiddleSection{
+    text-align: center;
+}
+.topNavMiddleSection p a{
+    color: #fff;
+    display: inline;
+    line-height: 50px;
+    margin-left: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.topNavMiddleSection p a:hover{
+    text-decoration: none;
+}
+.topNavRightSection p{
+    color: #fff;
+    display: inline;
+    /* font-size: 20px; */
+    margin-left: 2px;
+    text-transform: uppercase;
+}
+.footerSection{
+    background: #000d33;
+    color:#fff;
+    height: 35px;
+    line-height: 35px;
+    text-align:center;
+}
+.theme{
+    border-bottom: 2px solid #000;
+    /* background: rgb(163, 161, 161); */
+    margin: 5px;
+    width: 95%;
+}
+.theme form{
+    margin: 0px;
+}
+.theme form input{
+    border-width: thin;
+    border-radius: 2px;
+    height: 35px;
+    margin: 5px auto;
+    padding: 5px;
+    width: 90%;
+}
+.theme form input[type="submit"]{
+    border: 1px solid blue;
+    border-radius: 2px;
+    margin: 5px auto;
+    padding: 5px;
+    width: 50%;
+}
+.dashBox{
+    background: #0accee;
+    display: block;
+    height: 200px;
+    margin: 5px 10px;
+    width:30%;
+}
+div.dashBox:nth-child(odd){
+    background: #0ff;
+}
+.dashBox span{
+    /* background: red; */
+    display: block;
+    height:100px;
+    margin: 30px auto;
+    width:200px;
+}
+.dashBox span i.fa{
+    color:#ffffff;
+    font-size: 150px;
+    margin-left: 30px;
+    margin-top: -15px;
+    width:200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============ Login Styles ============ */
+.containerBox{
+    background: url('../assets/favicon.jfif');
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    left:0;
+    top:0;
+    width: 100vw;
+}
+.overLay{
+    background: rgba(171, 202, 188, 0.9);
+    height: 100vh;
+    width:100vw;
+}
+.Box{
+    background: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 350px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+}
+.boxImg{
+    background-image: url('../assets/di1.jfif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+}
+.BoxDown{
+    background: navy;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 50px;
+    position: absolute;
+    left:50%;
+    top:75%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+}
+form{
+    /* background: green; */
+    margin-top: 23px;
+    padding:10px;
+}
+form > h3{
+    color:palevioletred;
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+form label{
+    font-size: 15px;
+    font-weight: lighter;
+}
+.BoxDown .text{
+    color:#fff;
+    line-height: 50px;
+    text-align: center;
+}
+nav{
+    height: 50px;
+    width: 100%;
+}
+nav ul{
+    float: right;
+    margin:0;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    list-style-type: none;
+    line-height: 50px;
+}
+nav ul li a{
+    color: #fff;
+    letter-spacing: 6px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
